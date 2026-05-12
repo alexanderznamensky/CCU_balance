@@ -1,5 +1,7 @@
 # Баланс контроллера CCU для Home Assistant
 
+Разработка https://radsel.ru/ и https://radsel.ru/products/ccurelay.html
+
 Кастомная интеграция получает баланс с `https://ccu.su/data.cgx` командой:
 
 ```json
