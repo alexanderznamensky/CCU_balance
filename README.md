@@ -1,4 +1,5 @@
 # Баланс контроллера CCU для Home Assistant
+<img width="835" height="198" alt="image" src="https://github.com/user-attachments/assets/e5b38200-9fb6-43fe-b132-067dbeee4c37" />
 
 Разработка https://radsel.ru/ и https://radsel.ru/products/ccurelay.html
 
