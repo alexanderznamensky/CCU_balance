@@ -1,0 +1,45 @@
+{
+  "title": "CCU Controller Balance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "CCU Controller Balance",
+        "description": "Enter your CCU account login and password.",
+        "data": {
+          "login": "Login",
+          "password": "Password",
+          "update_interval_hours": "Update interval, hours"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid login or password"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "CCU Controller Balance options",
+        "description": "Configure how often the balance is updated automatically. Allowed range: 1 to 24 hours.",
+        "data": {
+          "update_interval_hours": "Update interval, hours"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "balance": {
+        "name": "Balance"
+      }
+    },
+    "button": {
+      "manual_update": {
+        "name": "Update balance"
+      }
+    }
+  }
+}
