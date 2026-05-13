@@ -30,6 +30,7 @@ class CcuBalanceSensor(CoordinatorEntity[CcuBalanceCoordinator], SensorEntity):
     # может отображать валюту как символ (например, ₽/Р).
     # Обычная единица измерения показывает именно RUB.
     _attr_native_unit_of_measurement = "RUB"
+    _attr_icon = "mdi:cash"
     _attr_state_class = SensorStateClass.MEASUREMENT
     _attr_suggested_display_precision = 2
     _attr_has_entity_name = True
@@ -52,7 +53,7 @@ class CcuBalanceSensor(CoordinatorEntity[CcuBalanceCoordinator], SensorEntity):
         """Return balance."""
         if not self.coordinator.data:
             return 0.0
-        return float(self.coordinator.data.get("balance", 0.0))
+        return float(f"{float(self.coordinator.data.get('balance', 0.0)):.2f}")
 
     @property
     def extra_state_attributes(self) -> dict:
